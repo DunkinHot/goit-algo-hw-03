@@ -24,7 +24,7 @@ def get_upcoming_birthdays(person):
     return birthday_sel
     
 for person in users:
-    string = get_upcoming_birthdays(person).isoformat()
+    string = get_upcoming_birthdays(person).strftime("%Y.%m.%d, %a")
     person["next party"] = string
    
 print(users)
