@@ -26,7 +26,7 @@ def get_upcoming_birthdays(person):
 for person in users:
     string = get_upcoming_birthdays(person).isoformat()
     person["next party"] = string
-
+   
 print(users)
     
 
